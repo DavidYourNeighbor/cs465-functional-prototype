@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	h1 Edit Document
+	p Here is the editor for the sheet music.
+	.container
+		.sidebar
+			ul
+				li: button: a(href="") SETTINGS
+				li: button: a(href="") OPEN
+				li: button: a(href="") SAVE
+				// Logo
+				img(src="")
+
+		.editor
+			.note_buttons
+				ul
+					li: button: a(href=""): img(src="")
+					li: button: a(href=""): img(src="")
+					li: button: a(href=""): img(src="")
+
+			.sheet_music
+				// The view of the sheet music
