@@ -1,6 +1,6 @@
 $(function() {
     var available_instruments=[
-        "Piano",
+        "Piano", 
         "Violin",
         "Guitar"
     ];
@@ -42,4 +42,6 @@ $(function() {
             return false;
         }
     });
+
+
 });
