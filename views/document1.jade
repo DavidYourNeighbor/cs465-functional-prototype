@@ -1,99 +1,49 @@
-extends layout
-
-block content
+doctype html(leng='en')
+head
+    meta(charset='UTF-8')
+    title
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css')
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+  body
+    #header
+      h1
+        a(href='/') Xenakis
     h1 Edit Document
-        p Here is the editor for the sheet music.
-        .container
-            .sidebar
-                ul
-                    li: button: a(href="") SETTINGS
-                        li: button: a(href="") OPEN
-                            li: button: a(href="") SAVE
-                                // Logo
-                                img(src="")
+    p Here is the editor for the sheet music.
+    .container
+      .sidebar
+        ul
+          li
+            button
+              a(href='') SETTINGS
+          li
+            button
+              a(href='') OPEN
+          li
+            button
+              a(href='') SAVE
+          // Logo
+          img(src='')
+      .editor
+        .note_buttons
+          ul
+            li
+              button
+                a(href='')
+                  img(src='')
+            li
+              button
+                a(href='')
+                  img(src='')
+            li
+              button
+                a(href='')
+                  img(src='')
+        .sheet_music
+          // The view of the sheet music
+    script(src='lib/jquery-2.1.3.min/index.js')
+    script(src='js/script.js')
+    script(src='http://localhost:35729/livereload.js')
 
-                .editor
-                    .note_buttons
-                        ul
-                            li: button: a(href=""): img(src="")
-                                li: button: a(href=""): img(src="")
-                                    li: button: a(href=""): img(src="")
 
-                                        .sheet_music
-                                            // The view of the sheet music
-                                .sheet-music
-                                    // The view of the sheet music
-          .sheet-music-setting
-              form.sheet-music-setting
-                  h3 Set Time Signature
-              |                             
-              table.sheet-music-setting
-                  tr.sheet-music-setting-option(width='200px')
-                      td
-                          input(type='text', name='beats-per-measure', width='10px')
-                  |                                     
-                  td
-                      label(for='beats-per-measure') Beats per measure
-                |                                 
-                tr.sheet-music-setting-option(width='200px')
-                    td
-                        input(type='text', name='duration-of-note', width='10px')
-                  |                                     
-                  td
-                      label(for='duration-of-note') Duration of note
-              |                             
-              h3 Change for
-              |                             
-              table
-                  tr.sheet-music-setting-option(width='200px')
-                      td
-                          input(type='radio', name='time-signature-scope', value='only')
-                  |                                     
-                  td
-                      label(for='time-signature-only') This measure only
-                |                                 
-                |                                 
-                tr.sheet-music-setting-option(width='200px')
-                    td
-                        input(type='radio', name='time-signature-scope', value='onwards')
-                  |                                     
-                  td
-                      label(for='time-signature-onwards') This measure onwards
-          |                     
-          |                     
-          .sheet-music-setting
-              form.sheet-music-setting
-                  h3 Select New Key
-              |                             
-              select(name='note')
-                  option(value='A') A
-                |                                     
-                option(value='B') B
-                |                                     
-                option(value='C') C
-                |                                     
-                option(value='D') D
-                |                                     
-                option(value='E') E
-                |                                     
-                option(value='F') F
-                |                                     
-                option(value='G') G
-              |                             
-              h3 Change for
-              |                             
-              table
-                  tr.sheet-music-setting-option(width='200px')
-                      td
-                          input(type='radio', name='time-signature-scope', value='only')
-                  |                                     
-                  td
-                      label(for='time-signature-only') This measure only
-                |                                 
-                |                                 
-                tr.sheet-music-setting-option(width='200px')
-                    td
-                        input(type='radio', name='time-signature-scope', value='onwards')
-                  |                                     
-                  td
-                      label(for='time-signature-onwards') This measure onwards
