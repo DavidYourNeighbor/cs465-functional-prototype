@@ -18,7 +18,8 @@ router.get('/document1', function(req, res, next) {
 /* GET Create New Document page */
 router.get('/createnewdocument', function(req, res, next) {
 	res.render('createnew', {
-		title: 'Create New Document'
+		title: 'Create New Document',
+		scripts: ['/js/createnew.js']
 	});
 });
 
