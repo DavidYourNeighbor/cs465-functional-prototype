@@ -1,6 +1,9 @@
 var express = require('express');
 var path = require('path');
-var routes = require('./routes/index.js');
+
+var routes = require('./routes/index');
+var profile = require('./routes/profile');
+var mymusic = require('./routes/mymusic');
 
 var app = express();
 
@@ -12,6 +15,8 @@ app.set('view engine', 'jade');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/profile', profile);
+app.use('/profile/mymusic', mymusic);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
