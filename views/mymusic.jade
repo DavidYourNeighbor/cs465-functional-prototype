@@ -1,10 +1,27 @@
 extends layout
 
 block content
-	h1 #{title}
-
-	ul
-		li: a(href="/profile/mymusic/createnewdocument") Create new document
-		li: a(href="/profile/mymusic/document1") Document 1
-		li: a(href="") Document 2
-		li: a(href="") Document 3
+    include header.jade
+    .mymusic
+        h1 #{title}
+        ul
+            li: .newdoc
+                    .wrapperdiv
+                        i(class="fa fa-plus fa-5x")
+                    .textwrapperdiv
+                        a(href="/profile/mymusic/createnewdocument") Add new music
+            li: .document1
+                    .wrapperdiv
+                        img(src='/images/In the Hall of the Mountain King.png')
+                    .textwrapperdiv
+                        a(href="/profile/mymusic/document1") In the Hall of the Mountain King
+            li: .document2
+                .wrapperdiv
+                    img(src='/images/Moonlight Sonata.png')
+                .textwrapperdiv
+                    a(href="/profile/mymusic/") Moonlight Sonata
+            li: .document3
+                .wrapperdiv
+                    img(src='/images/Long, Long Time Ago.png')
+                .textwrapperdiv
+                    a(href="/profile/mymusic/") A Long, Long Time Ago
