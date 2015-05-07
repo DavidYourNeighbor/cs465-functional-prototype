@@ -1,8 +1,12 @@
 extends layout
 
 block content
-    h1 #{title}
-    h2 Create your own sheet music for free.
-    button(id="facebooklogin"): a(href='/profile/mymusic') Log in with Facebook
-    p Or
-    p: a(href='') Sign up with your email.
+    .backgrounddiv
+        .pagecontentdiv
+            .logodiv
+                img(src='/images/Logo-stack-white.png', class='logoimage', id='logoimage')
+            h2 create your own sheet music for free
+            .social-wrap.a: a(href='/profile/mymusic')
+                button( id="facebook") Sign in with Facebook
+            p or
+            p: a(href='') Sign in with your email
