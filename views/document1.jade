@@ -1,4 +1,26 @@
 extends layout
+<<<<<<< HEAD
+block content
+include header.jade
+h1 Edit Document
+p Here is the editor for the sheet music.
+.container
+    .sidebar
+        ul
+            li: button: a(href="") SETTINGS
+            li: button: a(href="") OPEN
+            li: button: a(href="") SAVE
+            // Logo
+            img(src="")
+                .editor
+        .note_buttons
+            ul
+                li(class="note-button"): button: img(src="")
+                li(class="rest-button"): button: img(src="")
+                li(class="delete-button"): button: img(src="")
+                    .sheet_music
+            canvas(width='800', height='1000')
+=======
 
 block content
 	h1 Document Editor
@@ -47,3 +69,4 @@ block content
 					tabstave notation=true tablature=false key=F
 					notes C-D-A-B/5 | ## A-C/4 ##
 				</div>
+>>>>>>> df46532fa4b02011509c75c4ba48fc005a46681e
