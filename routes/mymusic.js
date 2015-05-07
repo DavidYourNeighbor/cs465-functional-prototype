@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+/*
 var composer = '';
 var beatsPerMinute = '';
 var noteValue = '';
@@ -18,6 +19,7 @@ app.post('/newdocument', function(req, res) {
     keyMajority = req.body.majority;
 	console.log(req.body);
 });
+*/
 
 /* GET user's My Music page */
 router.get('/', function(req, res, next) {
@@ -34,7 +36,7 @@ router.get('/newdocument', function(req, res, next) {
 		notation: '',
 		documentTitle: '',
 		documentComposer: 'Someone',
-		bpm: beatsPerMinute
+		bpm: ''
 	});
 });
 
