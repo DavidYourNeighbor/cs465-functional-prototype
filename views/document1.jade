@@ -1,49 +1,21 @@
-doctype html(leng='en')
-head
-    meta(charset='UTF-8')
-    title
-    link(rel='stylesheet', href='css/style.css')
-    link(rel='stylesheet', href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css')
-    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
-  body
-    #header
-      h1
-        a(href='/') Xenakis
-    h1 Edit Document
-    p Here is the editor for the sheet music.
-    .container
-      .sidebar
+extends layout
+block content
+include header.jade
+h1 Edit Document
+p Here is the editor for the sheet music.
+.container
+    .sidebar
         ul
-          li
-            button
-              a(href='') SETTINGS
-          li
-            button
-              a(href='') OPEN
-          li
-            button
-              a(href='') SAVE
-          // Logo
-          img(src='')
-      .editor
+            li: button: a(href="") SETTINGS
+            li: button: a(href="") OPEN
+            li: button: a(href="") SAVE
+            // Logo
+            img(src="")
+                .editor
         .note_buttons
-          ul
-            li
-              button
-                a(href='')
-                  img(src='')
-            li
-              button
-                a(href='')
-                  img(src='')
-            li
-              button
-                a(href='')
-                  img(src='')
-        .sheet_music
-          // The view of the sheet music
-    script(src='lib/jquery-2.1.3.min/index.js')
-    script(src='js/script.js')
-    script(src='http://localhost:35729/livereload.js')
-
-
+            ul
+                li(class="note-button"): button: img(src="")
+                li(class="rest-button"): button: img(src="")
+                li(class="delete-button"): button: img(src="")
+                    .sheet_music
+            canvas(width='800', height='1000')
