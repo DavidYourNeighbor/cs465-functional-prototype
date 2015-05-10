@@ -17,7 +17,7 @@ block content
                 table(class="create-doc-options")
                     tr(class="create-doc-options", width="400px")
                         td(class="create-doc-options", width="300px")
-                            label(for="notes-per-minute") Notes Per Measure: <input type="text" name="notes-per-minute">
+                            label(for="notes-per-minute") Notes Per Measure: <input class="short-input" type="text" name="notes-per-minute">
 
                         td(class="create-doc-options", width="100px")
                             label(for="key") Key:
@@ -39,9 +39,9 @@ block content
 
                     tr(class="create-doc-options")
                         td(class="create-doc-options")
-                            label(for="note-value") Note Value: <input type="text" name="note-value">
+                            label(for="note-value") Note Value: <input class="short-input" type="text" name="note-value">
 
                 label(for="instruments") Composing for Instruments:
-                            <br><input name="instruments" id="instruments"></br>
-                button(type="submit", value="Create"): a(href="/profile/mymusic/document1") Create
-                button(type="button", value="Cancel"): a(href="/profile/mymusic") Cancel
+                            <br><input class="long-input" name="instruments" id="instruments"></br>
+                button(type="submit", class="submit-button",value="Create"): a(href="/profile/mymusic/document1") Create
+                button(type="button", class="cancel-button", value="Cancel"): a(href="/profile/mymusic") Cancel

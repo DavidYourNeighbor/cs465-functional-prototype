@@ -207,11 +207,12 @@ li {
         text-align: center;
         font-family: $font-mydocs
     }
-    background-color: $whiteishfontcolor;
+    background-color: #FAFAFA;
     width: 600px;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
     top: 50%;
+    -webkit-transform: translateY(0%);
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     font-family: $font-mydocs;
@@ -225,4 +226,102 @@ li {
         width: 550px;
         height: 15px;
     }
+
+    .short-input {
+        display: inline-block;
+        width:40px;
+        height:15px;
+    }
+}
+
+select{
+	padding: 5px 30px 5px 5px; 
+	height:25px; 
+	font-family: $font-mydocs, sans-serif;
+
+	-webkit-appearance: none;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	
+	cursor: pointer;
+	border: 1px solid $headerblue;
+	color: #999;
+	font-size: 90%;
+	overflow: hidden;
+}
+
+select:hover, select:focus {
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+	outline: 0;
+	cursor: pointer;
+	border: 1px solid #CCC;
+	color: #999;
+	font-size: 90%;
+	overflow: hidden;
+}
+
+input, textarea{
+    font-family: $font-mydocs, sans-serif;
+	line-height: 25px;
+	padding: 5px;
+	width: 285px;
+	border: 1px solid $headerblue;
+	outline: 0;
+	font: normal 15px/150% $font-mydocs, sans-serif;
+
+	-webkit-box-shadow: 0 0 8px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 0 8px rgba(0,0,0,.1);
+	box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+	background: -webkit-linear-gradient(top, #EEE 0px, #FFF 25px);
+	background: -moz-linear-gradient(top, #EEE 0px, #FFF 25px);
+}
+
+textarea {
+	width: 420px;
+	max-width: 400px;
+	height: 180px;
+}
+
+input:hover, input:focus,
+textarea:hover, textarea:focus {
+	border-color: #C9C9C9;
+
+	-webkit-box-shadow: 0 0 8px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 8px rgba(0,0,0,.15);
+	box-shadow: 0 0 8px rgba(0,0,0,.15);
+}
+
+
+
+.cancel-button {
+    font-family: $font-mydocs, sans-serif;
+    position: absolute;
+    right: 200px;
+    bottom: 10px;
+    width: auto;
+	padding: 9px 15px;
+	background: $hyperlinkblue;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	cursor: pointer;
+}
+
+.submit-button {
+    font-family: $font-mydocs, sans-serif;
+    position: relative;
+    left: 200px;
+    bottom: 0px;
+    width: auto;
+	padding: 9px 15px;
+	background: $headerblue;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	cursor: pointer;
 }
