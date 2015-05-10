@@ -208,7 +208,8 @@ li {
         text-align: center;
         font-family: $font-mydocs
     }
-    background-color: #FAFAFA;
+    background-color: $settingbackground;
+    
     width: 600px;
     margin: 0 auto;
     position: relative;
@@ -233,12 +234,46 @@ li {
         width:40px;
         height:15px;
     }
+
+    .cancel-button {
+        font-family: $font-mydocs, sans-serif;
+        position: absolute;
+        right: 200px;
+        bottom: 10px;
+        width: auto;
+        padding: 9px 15px;
+        background: $hyperlinkblue;
+        border: 0;
+        font-size: 14px;
+        color: #FFFFFF;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .submit-button {
+        font-family: $font-mydocs;
+        position: relative;
+        left: 200px;
+        bottom: 0px;
+        width: auto;
+        padding: 9px 15px;
+        background: $headerblue;
+        border: 0;
+        font-size: 14px;
+        color: #FFFFFF;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+
 }
 
 .sheet-music-setting {
     h3 {
         text-align: center;
-        font-family: $font-mydocs
+        font-family: $font-mydocs;
     }
     background-color: #FAFAFA;
     width: 600px;
@@ -271,38 +306,35 @@ li {
 
 select{
     padding: 5px 30px 5px 5px; 
-    height:25px; 
-    font-family: $font-mydocs, sans-serif;
-
+    height:40px; 
+    font-family: $font-mydocs;
+    width: auto;
     -webkit-appearance: none;
     -webkit-border-radius: 5px;
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 
     cursor: pointer;
-    border: 1px solid $headerblue;
     color: #999;
     font-size: 90%;
     overflow: hidden;
 }
 
 select:hover, select:focus {
+    border: 1px solid $headerblue;
     -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
     outline: 0;
     cursor: pointer;
-    border: 1px solid #CCC;
     color: #999;
     font-size: 90%;
     overflow: hidden;
 }
 
-input, textarea{
-    font-family: $font-mydocs, sans-serif;
-    line-height: 25px;
+input {
+    line-height: 30px;
     padding: 5px;
     width: 285px;
-    border: 1px solid $headerblue;
     outline: 0;
-    font: normal 15px/150% $font-mydocs, sans-serif;
+    font: normal 15px/150% $font-mydocs;
 
     -webkit-box-shadow: 0 0 8px rgba(0,0,0,.1);
     -moz-box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -312,57 +344,14 @@ input, textarea{
     background: -moz-linear-gradient(top, #EEE 0px, #FFF 25px);
 }
 
-textarea {
-    width: 420px;
-    max-width: 400px;
-    height: 180px;
-}
-
-input:hover, input:focus,
-textarea:hover, textarea:focus {
-    border-color: #C9C9C9;
+input:hover, input:focus {
+    border-color: $headerblue;
 
     -webkit-box-shadow: 0 0 8px rgba(0,0,0,.15);
     -moz-box-shadow: 0 0 8px rgba(0,0,0,.15);
     box-shadow: 0 0 8px rgba(0,0,0,.15);
 }
 
-
-
-.cancel-button {
-    font-family: $font-mydocs, sans-serif;
-    position: absolute;
-    right: 200px;
-    bottom: 10px;
-    width: auto;
-    padding: 9px 15px;
-    background: $hyperlinkblue;
-    border: 0;
-    font-size: 14px;
-    color: #FFFFFF;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    cursor: pointer;
-}
-
-.submit-button {
-    font-family: $font-mydocs, sans-serif;
-    position: relative;
-    left: 200px;
-    bottom: 0px;
-    width: auto;
-    padding: 9px 15px;
-    background: $headerblue;
-    border: 0;
-    font-size: 14px;
-    color: #FFFFFF;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    cursor: pointer;
-    height: 80%;
-    width: 100%;
-    vertical-align: middle;
-}
 .textwrapperdiv {
     height: 20%;
     width: 100%;

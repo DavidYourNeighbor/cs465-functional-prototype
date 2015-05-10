@@ -1,9 +1,6 @@
 extends layout
 
-
 block content
-    script(src="//code.jquery.com/jquery-1.10.2.js")
-    script(src="//code.jquery.com/ui/1.11.4/jquery-ui.js")
 
     - each s in scripts
         script(src=s)
@@ -42,7 +39,7 @@ block content
                             label(for="note-value") Note Value: <input class="short-input" type="text" name="note-value">
 
                 label(for="instruments") Composing for Instruments:
-                            <br><input class="long-input" name="instruments" id="instruments"></br>
+                            <br><input class="long-input" name="instruments" type="text" id="instruments"></br>
                 button(type="submit", class="submit-button",value="Create"): a(href="/profile/mymusic/document1") Create
                 button(type="button", class="cancel-button", value="Cancel"): a(href="/profile/mymusic") Cancel
 
