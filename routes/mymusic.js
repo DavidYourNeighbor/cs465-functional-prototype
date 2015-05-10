@@ -1,6 +1,26 @@
 var express = require('express');
 var router = express.Router();
 
+/*
+var composer = '';
+var beatsPerMinute = '';
+var noteValue = '';
+var keyNote = '';
+var keySign = '';
+var keyMajority = '';
+
+app.post('/newdocument', function(req, res) {
+	docTitle = req.body.title;
+	composer = req.body.composer;
+    beatsPerMinute = req.body.beatsPerMinute;
+    noteValue = req.body.noteValue;
+    keyNote = req.body.key;
+    keySign = req.body.sign;
+    keyMajority = req.body.majority;
+	console.log(req.body);
+});
+*/
+
 /* GET user's My Music page */
 router.get('/', function(req, res, next) {
 	res.render('mymusic', {
@@ -9,9 +29,22 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET selected Document */
+router.get('/newdocument', function(req, res, next) {
+	res.render('newdocument', {
+		title: 'New Document',
+		scripts: ['/js/editor.js'],
+		notation: '',
+		documentTitle: '',
+		documentComposer: 'Someone',
+		bpm: ''
+	});
+});
+
+/* GET selected Document */
 router.get('/document1', function(req, res, next) {
 	res.render('document1', {
-		title: 'Document 1'
+		title: 'Document 1',
+		scripts: ['/js/editor.js']
 	});
 });
 

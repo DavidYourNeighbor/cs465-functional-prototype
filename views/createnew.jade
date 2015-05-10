@@ -5,6 +5,7 @@ block content
     script(src="//code.jquery.com/jquery-1.10.2.js")
     script(src="//code.jquery.com/ui/1.11.4/jquery-ui.js")
 
+<<<<<<< HEAD
     - each s in scripts
         script(src=s)
 
@@ -21,6 +22,34 @@ block content
 
                         td(class="create-doc-options", width="100px")
                             label(for="key") Key:
+=======
+    - each script in scripts
+        script(src=script)
+
+    .container
+        .create-view
+            h1 Create New Document
+            form(class="create-doc-options" action="/profile/mymusic/newdocument" method="post")
+                label(for="title") Title of Piece: <br>
+                    input(type="text", name="title")
+                </br>
+                label(for="composer") Name of Composer: <br>
+                    input(type="text", name="composer")
+                </br>
+            p Initial Piece Settings:
+                table(class="create-doc-options")
+                    tr(class="create-doc-options", width="400px")
+                        td(class="create-doc-options", width="300px")
+                            label(for="beats-per-minute") Notes Per Measure:
+                                input(type="text", name="beatsPerMinute")
+                    tr(class="create-doc-options")
+                        td(class="create-doc-options")
+                            label(for="note-value") Note Value:
+                                input(type="text" name="noteValue")
+                    tr(class="create-doc-options")
+                        td(class="create-doc-options", width="100px")
+                            label(for="key") Key Signature:
+>>>>>>> 106cf116204109650e4dc0298d7962ac7230caea
                                 select(name="note")
                                     option(value="A") A
                                     option(value="B") B
@@ -37,6 +66,7 @@ block content
                                     option(value="major") Major
                                     option(value="minor") Minor
 
+<<<<<<< HEAD
                     tr(class="create-doc-options")
                         td(class="create-doc-options")
                             label(for="note-value") Note Value: <input class="short-input" type="text" name="note-value">
@@ -45,3 +75,9 @@ block content
                             <br><input class="long-input" name="instruments" id="instruments"></br>
                 button(type="submit", class="submit-button",value="Create"): a(href="/profile/mymusic/document1") Create
                 button(type="button", class="cancel-button", value="Cancel"): a(href="/profile/mymusic") Cancel
+=======
+                label(for="instruments") Composing for Instruments:
+                <br><input name="instruments" id="instruments"></br>
+                button(type="submit", value="Create"): a(href="/profile/mymusic/newdocument") Create
+                button(type="button", value="Cancel"): a(href="/profile/mymusic") Cancel
+>>>>>>> 106cf116204109650e4dc0298d7962ac7230caea

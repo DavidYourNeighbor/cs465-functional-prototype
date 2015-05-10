@@ -177,6 +177,7 @@ li {
     margin-bottom: 2%;
     font-family: $font-mydocs;
     .wrapperdiv {
+<<<<<<< HEAD
         background-color: $headerfontcolor;
         height: 80%;
         width: 100%;
@@ -324,4 +325,29 @@ textarea:hover, textarea:focus {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	cursor: pointer;
+=======
+      background-color: $headerfontcolor;
+      height: 80%;
+      width: 100%;
+      vertical-align: middle;
+      img{
+        padding-top: 5px;
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+    .textwrapperdiv {
+      height: 20%;
+      width: 100%;
+      text-align: center;
+      a {
+        color: $whiteishfontcolor;
+      }
+      a:hover {
+        text-decoration: none;
+        color: $hyperlinkblue;
+      }
+    }
+  }
+>>>>>>> 106cf116204109650e4dc0298d7962ac7230caea
 }

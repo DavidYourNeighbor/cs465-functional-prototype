@@ -1,5 +1,6 @@
 extends layout
 <<<<<<< HEAD
+<<<<<<< HEAD
 block content
     include header.jade
 h1 Edit Document
@@ -68,3 +69,53 @@ p Here is the editor for the sheet music.
                                         tabstave notation=true tablature=false key=F
                                         notes C-D-A-B/5 | ## A-C/4 ##
                                 </div>
+=======
+
+block content
+	h1 Document Editor
+	.container
+		.sidebar
+			ul
+				li: button: a(href="") SETTINGS
+				li: button: a(href="") OPEN
+				li: button: a(href="") SAVE
+				// Logo
+				img(src="")
+
+		.document-editor
+			.note_buttons
+				ul
+					li(class="note-button"): button: img(src="")
+					li(class="rest-button"): button: img(src="")
+					li(class="delete-button"): button: img(src="")
+
+			.sheet_music.
+				<h2 class="document-title">Document 1</h2>
+				<h3 class="document-composer">Jane Doe</h3>
+				<div class="vex-tabdiv" width=800 scale=1.0 editor="false">
+					tabstave notation=true tablature=false clef=treble key=F time=4/4
+					notes C/5
+					notes D/5
+					notes A/5
+					notes B/5
+					notes |
+					notes ##
+					notes A/4
+					notes C/4
+					notes ##
+					tabstave notation=true tablature=false key=F
+					notes C-D-A-B/5 | ## A-C/4 ##
+					tabstave notation=true tablature=false key=F
+					notes C-D-A-B/5 | ## A-C/4 ##
+					tabstave notation=true tablature=false key=F
+					notes C-D-A-B/5 | ## A-C/4 ##
+					tabstave notation=true tablature=false key=F
+					notes C-D-A-B/5 | ## A-C/4 ##
+					tabstave notation=true tablature=false key=F
+					notes C-D-A-B/5 | ## A-C/4 ##
+					tabstave notation=true tablature=false key=F
+					notes C-D-A-B/5 | ## A-C/4 ##
+					tabstave notation=true tablature=false key=F
+					notes C-D-A-B/5 | ## A-C/4 ##
+				</div>
+>>>>>>> 106cf116204109650e4dc0298d7962ac7230caea
