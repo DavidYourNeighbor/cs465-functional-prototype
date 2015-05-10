@@ -1,39 +1,41 @@
 extends layout
+
 block content
+
+
     .sheet-music-setting-view
         form.sheet-music-setting
-            h3 Set Time Signature
+            h3 Select New Key
 
-            table.sheet-music-setting
-                tr.sheet-music-setting-option(width='200px')
-                    td
-                        input(type='text', name='beats-per-measure', width='10px')
+            select(name='note')
+                option(value='A') A
 
-                    td
-                        label(for='beats-per-measure') Beats per measure
+                option(value='B') B
 
-               tr.sheet-music-setting-option(width='200px')
-                    td
-                        input(type='text', name='duration-of-note', width='10px')
+                option(value='C') C
 
-                    td
-                        label(for='duration-of-note') Duration of note
+                option(value='D') D
+
+                option(value='E') E
+
+                option(value='F') F
+
+                option(value='G') G
 
             h3 Change for
-            
+
             table
                 tr.sheet-music-setting-option(width='200px')
                     td
                         input(type='radio', name='time-signature-scope', value='only')
-            
                     td
                         label(for='time-signature-only') This measure only
-            
+
                 tr.sheet-music-setting-option(width='200px')
                     td
                         input(type='radio', name='time-signature-scope', value='onwards')
-            
+
                     td
                         label(for='time-signature-onwards') This measure onwards
-            button(type="submit", class="submit-button",value="Create"): a(href="") Save 
+            button(type="submit", class="submit-button",value="Create"): a(href="") Save
             button(type="button", class="cancel-button", value="Cancel"): a(href="") Cancel

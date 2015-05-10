@@ -235,6 +235,38 @@ li {
     }
 }
 
+.sheet-music-setting {
+    h3 {
+        text-align: center;
+        font-family: $font-mydocs
+    }
+    background-color: #FAFAFA;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(0%);
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-family: $font-mydocs;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding:10px;
+
+    .long-input {
+        width: 550px;
+        height: 15px;
+    }
+
+    .short-input {
+        display: inline-block;
+        width:40px;
+        height:15px;
+    }
+}
+
 
 
 select{
