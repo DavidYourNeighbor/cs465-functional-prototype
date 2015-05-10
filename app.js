@@ -1,8 +1,6 @@
 var express = require('express');
 var path = require('path');
 
-var bodyParser = require('body-parser');
-
 var routes = require('./routes/index');
 var profile = require('./routes/profile');
 var mymusic = require('./routes/mymusic');
@@ -13,8 +11,6 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('jade').renderFile);
 app.set('view engine', 'jade');
-
-
 
 app.use(express.static(path.join(__dirname, 'public')));
 
