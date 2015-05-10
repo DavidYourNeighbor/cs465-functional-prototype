@@ -5,7 +5,7 @@ block content
 
     .sheet-music-setting-view
         form.sheet-music-setting
-            h3 Select New Key
+            h2 Select New Key
 
             select(name='note')
                 option(value='A') A
@@ -27,14 +27,13 @@ block content
             table
                 tr.sheet-music-setting-option(width='200px')
                     td
-                        input(type='radio', name='time-signature-scope', value='only')
+                        input(type='radio', name='time-signature-scope', value='only', class='short-input')
                     td
                         label(for='time-signature-only') This measure only
 
                 tr.sheet-music-setting-option(width='200px')
                     td
-                        input(type='radio', name='time-signature-scope', value='onwards')
-
+                        input(type='radio', name='time-signature-scope', value='onwards', class='short-input')
                     td
                         label(for='time-signature-onwards') This measure onwards
             button(type="submit", class="submit-button",value="Create"): a(href="") Save

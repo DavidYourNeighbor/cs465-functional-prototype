@@ -271,11 +271,15 @@ li {
 }
 
 .sheet-music-setting {
-    h3 {
+    h2 {
         text-align: center;
+    }
+
+    h3 {
+        text-align: left;
         font-family: $font-mydocs;
     }
-    background-color: #FAFAFA;
+    background-color: $settingbackground;
     width: 600px;
     margin: 0 auto;
     position: relative;
@@ -290,9 +294,10 @@ li {
     border-radius: 10px;
     padding:10px;
 
-    .long-input {
-        width: 550px;
-        height: 15px;
+    select {
+        left: 270px;
+        top: 0px;
+        position: relative;
     }
 
     .short-input {
@@ -300,6 +305,39 @@ li {
         width:40px;
         height:15px;
     }
+
+    .cancel-button {
+        font-family: $font-mydocs, sans-serif;
+        position: absolute;
+        right: 200px;
+        bottom: 10px;
+        width: auto;
+        padding: 9px 15px;
+        background: $hyperlinkblue;
+        border: 0;
+        font-size: 14px;
+        color: #FFFFFF;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .submit-button {
+        font-family: $font-mydocs;
+        position: relative;
+        left: 200px;
+        bottom: 0px;
+        width: auto;
+        padding: 9px 15px;
+        background: $headerblue;
+        border: 0;
+        font-size: 14px;
+        color: #FFFFFF;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        cursor: pointer;
+        vertical-align: middle;
+    
 }
 
 
@@ -363,4 +401,5 @@ input:hover, input:focus {
         text-decoration: none;
         color: $hyperlinkblue;
     }
+}
 }
