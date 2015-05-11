@@ -6,17 +6,17 @@ block content
         script(src=s)
 
         .create-view
-            form(class="create-doc-options")
+            form(class="create-doc-options", action="/profile/mymusic/document1")
                 h1 Create New Document
                 label(for="title") Title of Piece: <br><input class="long-input" type="text" name="title">
                 label(for="composer") <br>Name of Composer: <br><input class="long-input" type="text" name="composer">
-                p Initial Piece Settings:
+                h2 Initial Piece Settings:
                 table(class="create-doc-options")
-                    tr(class="create-doc-options", width="400px")
-                        td(class="create-doc-options", width="300px")
-                            label(for="notes-per-minute", width="80px") Notes Per Measure: 
+                    tr(class="create-doc-options")
+                        td(class="create-doc-options")
+                            label(for="notes-per-minute", class="short-label") Notes Per Measure: 
                             input(class="short-input", type="text", name="notes-per-minute")
-                        td(class="create-doc-options", width="100px")
+                        td(class="create-doc-options")
                             label(for="key") Key:
                                 select(name="note")
                                     option(value="A") A
@@ -34,10 +34,10 @@ block content
                                     option(value="major") Major
                                     option(value="minor") Minor
                     tr(class="create-doc-options")
-                        td(class="create-doc-options", width="300px")
-                            label(for="note-value", width="80px") Note Value:                            
+                        td(class="create-doc-options")
+                            label(for="note-value", class="short-label") Note Value:                            
                             input(class="short-input", type="text", name="note-value")
                 label(for="instruments") Composing for Instruments:
                 input(class="long-input", name="instruments", type="text", id="instruments")
-                button(type="submit", class="submit-button",value="Create"): a(href="/profile/mymusic/document1") Create
-                button(type="button", class="cancel-button", value="Cancel"): a(href="/profile/mymusic") Cancel
+                button(type="submit", class="submit-button",value="Create"): p Create
+                input(type="button", class="cancel-button", onClick="location.href='/profile/mymusic'", value="Cancel")

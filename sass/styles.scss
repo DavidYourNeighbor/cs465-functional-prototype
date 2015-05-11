@@ -208,7 +208,13 @@ li {
         text-align: center;
         font-family: $font-mydocs
     }
-    background-color: $settingbackground;
+
+    h2 {
+        font-family: $font-mydocs;
+        padding-top: 10px;
+    }
+
+    background-color: $whiteishfontcolor;
 
     width: 565px;
     margin: 0 auto;
@@ -222,7 +228,8 @@ li {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    padding:10px;
+    padding-bottom:15px;
+    padding:5px;
 
     .long-input {
         width: 550px;
@@ -235,12 +242,18 @@ li {
         height:15px;
     }
 
+    .short-label {
+        display: inline-block;
+        width:150px;
+        height:15px;
+    }
+
     .cancel-button {
         font-family: $font-mydocs, sans-serif;
         position: absolute;
-        right: 200px;
-        bottom: 10px;
-        width: auto;
+        right: 75px;
+        bottom: 5px;
+        width: 200px;
         padding: 9px 15px;
         background: $hyperlinkblue;
         border: 0;
@@ -254,9 +267,9 @@ li {
     .submit-button {
         font-family: $font-mydocs;
         position: relative;
-        left: 200px;
+        left: 75px;
         bottom: 0px;
-        width: auto;
+        width: 200px;
         padding: 9px 15px;
         background: $headerblue;
         border: 0;
