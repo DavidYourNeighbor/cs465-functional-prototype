@@ -310,14 +310,17 @@ li {
 .sheet-music-setting {
     h2 {
         text-align: center;
+        padding-bottom:15px;
+        padding-top:5px;
     }
 
     h3 {
+        padding-top: 15px;
         text-align: left;
         font-family: $font-mydocs;
     }
-    background-color: $settingbackground;
-    width: 600px;
+    background-color: $whiteishfontcolor;
+    width: 400px;
     margin: 0 auto;
     position: relative;
     top: 50%;
@@ -332,12 +335,13 @@ li {
     padding:10px;
 
     select {
-        left: 270px;
+        left: 174px;
         top: 0px;
         position: relative;
     }
 
     .short-input {
+        padding-left: 10px;
         display: inline-block;
         width:40px;
         height:15px;
@@ -346,9 +350,10 @@ li {
     .cancel-button {
         font-family: $font-mydocs, sans-serif;
         position: absolute;
-        right: 200px;
+        right: 75px;
         bottom: 10px;
-        width: auto;
+        width: 100px;
+        height: 40px;
         padding: 9px 15px;
         background: $hyperlinkblue;
         border: 0;
@@ -357,14 +362,16 @@ li {
         -moz-border-radius: 5px;
         -webkit-border-radius: 5px;
         cursor: pointer;
+        vertical-align: middle;
     }
 
     .submit-button {
         font-family: $font-mydocs;
         position: relative;
-        left: 200px;
+        left: 75px;
         bottom: 0px;
-        width: auto;
+        width: 100px;
+        height: 40px;
         padding: 9px 15px;
         background: $headerblue;
         border: 0;
@@ -376,67 +383,67 @@ li {
         vertical-align: middle;
 
     }
+}
 
 
+select{
+    padding: 5px 30px 5px 5px; 
+    height:40px; 
+    font-family: $font-mydocs;
+    width: auto;
+    -webkit-appearance: none;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 
-    select{
-        padding: 5px 30px 5px 5px; 
-        height:40px; 
-        font-family: $font-mydocs;
-        width: auto;
-        -webkit-appearance: none;
-        -webkit-border-radius: 5px;
-        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    color: #999;
+    font-size: 90%;
+    overflow: hidden;
+}
 
-        cursor: pointer;
-        color: #999;
-        font-size: 90%;
-        overflow: hidden;
+select:hover, select:focus {
+    border: 1px solid $headerblue;
+    -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    outline: 0;
+    cursor: pointer;
+    color: #999;
+    font-size: 90%;
+    overflow: hidden;
+}
+
+input {
+    line-height: 30px;
+    padding: 5px;
+    width: 285px;
+    outline: 0;
+    font: normal 15px/150% $font-mydocs;
+
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,.1);
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+    background: -webkit-linear-gradient(top, #EEE 0px, #FFF 25px);
+    background: -moz-linear-gradient(top, #EEE 0px, #FFF 25px);
+}
+
+input:hover, input:focus {
+    border-color: $headerblue;
+
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,.15);
+    box-shadow: 0 0 8px rgba(0,0,0,.15);
+}
+
+.textwrapperdiv {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    a {
+        color: $whiteishfontcolor;
     }
-
-    select:hover, select:focus {
-        border: 1px solid $headerblue;
-        -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-        outline: 0;
-        cursor: pointer;
-        color: #999;
-        font-size: 90%;
-        overflow: hidden;
-    }
-
-    input {
-        line-height: 30px;
-        padding: 5px;
-        width: 285px;
-        outline: 0;
-        font: normal 15px/150% $font-mydocs;
-
-        -webkit-box-shadow: 0 0 8px rgba(0,0,0,.1);
-        -moz-box-shadow: 0 0 8px rgba(0,0,0,.1);
-        box-shadow: 0 0 8px rgba(0,0,0,.1);
-
-        background: -webkit-linear-gradient(top, #EEE 0px, #FFF 25px);
-        background: -moz-linear-gradient(top, #EEE 0px, #FFF 25px);
-    }
-
-    input:hover, input:focus {
-        border-color: $headerblue;
-
-        -webkit-box-shadow: 0 0 8px rgba(0,0,0,.15);
-        -moz-box-shadow: 0 0 8px rgba(0,0,0,.15);
-        box-shadow: 0 0 8px rgba(0,0,0,.15);
-    }
-
-    .textwrapperdiv {
-        height: 20%;
-        width: 100%;
-        text-align: center;
-        a {
-            color: $whiteishfontcolor;
-        }
-        a:hover {
-            text-decoration: none;
-            color: $hyperlinkblue;
-        }
+    a:hover {
+        text-decoration: none;
+        color: $hyperlinkblue;
     }
 }
+
