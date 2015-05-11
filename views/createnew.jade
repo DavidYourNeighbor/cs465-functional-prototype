@@ -14,8 +14,8 @@ block content
                 table(class="create-doc-options")
                     tr(class="create-doc-options", width="400px")
                         td(class="create-doc-options", width="300px")
-                            label(for="notes-per-minute") Notes Per Measure: <input class="short-input" type="text" name="notes-per-minute">
-
+                            label(for="notes-per-minute", width="80px") Notes Per Measure: 
+                            input(class="short-input", type="text", name="notes-per-minute")
                         td(class="create-doc-options", width="100px")
                             label(for="key") Key:
                                 select(name="note")
@@ -33,13 +33,11 @@ block content
                                 select(name="majority")
                                     option(value="major") Major
                                     option(value="minor") Minor
-
                     tr(class="create-doc-options")
-                        td(class="create-doc-options")
-                            label(for="note-value") Note Value: <input class="short-input" type="text" name="note-value">
-
+                        td(class="create-doc-options", width="300px")
+                            label(for="note-value", width="80px") Note Value:                            
+                            input(class="short-input", type="text", name="note-value")
                 label(for="instruments") Composing for Instruments:
-                            <br><input class="long-input" name="instruments" type="text" id="instruments"></br>
+                input(class="long-input", name="instruments", type="text", id="instruments")
                 button(type="submit", class="submit-button",value="Create"): a(href="/profile/mymusic/document1") Create
                 button(type="button", class="cancel-button", value="Cancel"): a(href="/profile/mymusic") Cancel
-
