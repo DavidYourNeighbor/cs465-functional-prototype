@@ -209,7 +209,7 @@ li {
         font-family: $font-mydocs
     }
 
-    h2 {
+    .section-div {
         font-family: $font-mydocs;
         padding-top: 10px;
     }
@@ -242,7 +242,18 @@ li {
         height:15px;
     }
 
+    .short-label-text {
+        display: inline-block;
+        width:220px;
+    }
+
     .short-label {
+        display: inline-block;
+        width:40px;
+        height:15px;
+    }
+
+    .long-label {
         display: inline-block;
         width:150px;
         height:15px;
@@ -281,8 +292,8 @@ li {
         vertical-align: middle;
     }
     select{
-        padding: 5px 30px 5px 5px; 
-        height:40px; 
+        padding: 0px 30px 0px 5px; 
+        height:25px; 
         font-family: $font-mydocs;
         width: auto;
         -webkit-appearance: none;
@@ -387,7 +398,7 @@ li {
 
 
 select{
-    padding: 5px 30px 5px 5px; 
+    padding: 0px 30px 5px 0px; 
     height:40px; 
     font-family: $font-mydocs;
     width: auto;
