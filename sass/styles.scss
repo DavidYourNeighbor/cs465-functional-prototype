@@ -205,13 +205,18 @@ li {
 
 .create-doc-options {
     h1 {
+        padding-top: 10px;
         text-align: center;
         font-family: $font-mydocs
     }
 
     .section-div {
         font-family: $font-mydocs;
-        padding-top: 10px;
+        padding-top: 30px;
+    }
+
+    #more-div {
+        padding-top: 40px;
     }
 
     background-color: $whiteishfontcolor;
@@ -245,6 +250,7 @@ li {
     .short-label-text {
         display: inline-block;
         width:220px;
+        height:15px;
     }
 
     .short-label {

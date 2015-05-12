@@ -9,8 +9,10 @@ block content
         .create-view
             form(class="create-doc-options", action="/profile/mymusic/document1")
                 h1 Create New Document
-                label(for="title") Title of Piece: <br><input class="long-input" type="text" name="title">
-                label(for="composer") <br>Name of Composer: <br><input class="long-input" type="text" name="composer">
+                label(for="title", class="long-label section-div") Title of Piece:
+                input(class="long-input", type="text", name="title")
+                label(for="composer", class="long-label") Name of Composer:
+                input(class="long-input", type="text", name="composer")
                 h2(class="section-div") Initial Piece Settings:
                 table(class="create-doc-options")
                     tr(class="create-doc-options")
@@ -38,7 +40,7 @@ block content
                         td(class="short-label-text")
                             label(for="note-value", class="long-label") Note Value:                            
                             input(class="short-input", type="text", name="note-value")
-                label(for="instruments" class="section-div") Composing for Instruments:
+                label(for="instruments" class="section-div", id="more-div") Composing for Instruments:
                 input(class="long-input", name="instruments", type="text", id="instruments")
                 button(type="submit", class="submit-button",value="Create"): p Create
                 input(type="button", class="cancel-button", onClick="location.href='/profile/mymusic'", value="Cancel")
